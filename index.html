@@ -3,78 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rigby Teacher • Esports & ELA</title>
-  <style>
-    :root{--bg:#0f0f12;--card:#16171b;--text:#eef0f3;--muted:#a7acb5;--accent:#d4af37;--maroon:#5a1f2a;--gold:#c8a74a}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;background:linear-gradient(180deg,#0b0c0f, #121318 40%, #0b0c0f);color:var(--text)}
-    a{color:inherit;text-decoration:none}
-    .container{max-width:1100px;margin:0 auto;padding:0 1rem}
-    header{position:sticky;top:0;z-index:50;background:rgba(18,19,24,.6);backdrop-filter:blur(10px);border-bottom:1px solid #222}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}
-    .brand{display:flex;gap:.6rem;align-items:center;font-weight:700;letter-spacing:.5px}
-    .logo{width:34px;height:34px;border-radius:10px;background:conic-gradient(from 210deg,var(--gold),var(--maroon));display:grid;place-items:center;color:#111;font-weight:800}
-    .links{display:flex;gap:1rem}
-    .links a{padding:.5rem .7rem;border-radius:.6rem;color:var(--muted)}
-    .links a:hover{background:#202128;color:var(--text)}
-    .menu{display:none}
-    @media (max-width: 760px){
-      .links{display:none}
-      .menu{display:block}
-    }
-    .hero{padding:5.5rem 0 3.5rem;border-bottom:1px solid #1e1f24;background:radial-gradient(1200px 600px at 80% -100%, rgba(200,167,74,.18), transparent 70%)}
-    .kicker{color:var(--muted);text-transform:uppercase;letter-spacing:1.8px;font-size:.78rem}
-    h1{margin:.4rem 0 1rem;font-size:clamp(1.8rem,3.4vw,3rem);line-height:1.1}
-    .hero p{color:#cfd3da;max-width:60ch}
-    .cta{display:flex;gap:.7rem;margin-top:1.2rem;flex-wrap:wrap}
-    .btn{padding:.75rem 1rem;border-radius:.8rem;border:1px solid #2a2c34;background:#1a1b21;color:var(--text);font-weight:600}
-    .btn.primary{background:linear-gradient(180deg,var(--gold),#b9942e);border-color:#b9942e;color:#161410}
-    .btn.ghost{background:transparent}
-    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:1rem;margin:2rem 0}
-    .card{grid-column:span 6;background:linear-gradient(180deg,#181a20,#13141a);border:1px solid #252630;border-radius:18px;padding:1.2rem}
-    .card h3{margin:.2rem 0 .7rem}
-    .pill{display:inline-block;padding:.25rem .55rem;border-radius:999px;background:#232530;border:1px solid #2c2e39;color:var(--muted);font-size:.75rem}
-    @media(max-width:900px){.card{grid-column:span 12}}
-    section{padding:3rem 0;border-bottom:1px solid #1e1f24}
-    .section-title{font-size:1.6rem;margin:0 0 .6rem}
-    .muted{color:var(--muted)}
-    footer{padding:2.2rem 0;color:var(--muted)}
-    .tag{color:#f1c453}
-    table{width:100%;border-collapse:collapse;background:#15161b;border-radius:12px;overflow:hidden}
-    th,td{padding:.9rem;border-bottom:1px solid #222}
-    th{text-align:left;color:#cbd2da;background:#14161a}
-    tr:last-child td{border-bottom:none}
-    input,textarea{width:100%;padding:.75rem;border-radius:.7rem;border:1px solid #2a2c34;background:#121319;color:var(--text)}
-    textarea{min-height:120px}
-    label{font-size:.9rem;color:var(--muted)}
-  </style>
+  <title>Rigby Teacher • Home</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <header>
     <div class="container nav">
-      <div class="brand"><div class="logo">RT</div> Rigby Teacher</div>
+      <div class="brand"><img src="assets/img/logo.svg" alt="Rigby Trojans logo"> Rigby Teacher</div>
       <nav class="links" id="navLinks">
-        <a href="#about">About</a>
-        <a href="#classes">Classes</a>
-        <a href="#esports">Esports</a>
-        <a href="#resources">Resources</a>
-        <a href="#contact">Contact</a>
+        <a class="active" href="index.html">Home</a>
+        <a class="" href="classes.html">Classes</a>
+        <a class="" href="esports.html">Esports</a>
+        <a class="" href="resources.html">Resources</a>
+        <a class="" href="contact.html">Contact</a>
       </nav>
       <button class="menu" aria-label="Toggle Menu" onclick="toggleMenu()">☰</button>
     </div>
   </header>
-
+  
   <main>
     <section class="hero container">
       <span class="kicker">Educator • ELA • Cybersecurity • Esports</span>
       <h1>Helping students think clearly, write powerfully, and compete as great teammates.</h1>
-      <p>
-        Welcome! This simple, modern site is your hub for class materials, esports schedules, and program updates.
-        It’s built with clean HTML/CSS so you can host it anywhere—from GitHub Pages to your school domain.
-      </p>
+      <p>Welcome! This site is your hub for class materials, esports schedules, and program updates.</p>
       <div class="cta">
-        <a class="btn primary" href="#classes">View Classes</a>
-        <a class="btn ghost" href="#esports">Esports Program</a>
+        <a class="btn primary" href="classes.html">View Classes</a>
+        <a class="btn ghost" href="esports.html">Esports Program</a>
       </div>
 
       <div class="grid">
@@ -96,90 +50,13 @@
         </div>
       </div>
     </section>
-
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title">About</h2>
-        <p class="muted">High school ELA teacher and esports program director. I build practical, project-based lessons that blend literature, technology, and teamwork.</p>
-      </div>
-    </section>
-
-    <section id="classes">
-      <div class="container">
-        <h2 class="section-title">Classes</h2>
-        <table>
-          <thead><tr><th>Course</th><th>Overview</th><th>Links</th></tr></thead>
-          <tbody>
-            <tr><td>ELA 10</td><td>Rhetoric, argument, and literary analysis.</td><td><a href="#">Syllabus</a> · <a href="#">Weekly Planner</a></td></tr>
-            <tr><td>ELA 11</td><td>American literature and research writing.</td><td><a href="#">Syllabus</a> · <a href="#">Assignments</a></td></tr>
-            <tr><td>Intro to Cybersecurity</td><td>CIA Triad, policies, and attack simulations.</td><td><a href="#">Outline</a> · <a href="#">Labs</a></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section id="esports">
-      <div class="container">
-        <h2 class="section-title">Esports Program</h2>
-        <p class="muted">Rigby Trojans Gaming fields teams in Overwatch 2, Valorant, Rocket League, Smash, Fortnite, and Apex.</p>
-        <div class="grid">
-          <div class="card"><h3>Season Schedule</h3><p>Add match dates, brackets, and scrim times here.</p></div>
-          <div class="card"><h3>Team Standards</h3><p>Sportsmanship, attendance, and digital citizenship expectations.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="resources">
-      <div class="container">
-        <h2 class="section-title">Resources</h2>
-        <ul>
-          <li>Writing Guides: Thesis, evidence, MLA quick-reference</li>
-          <li>Cybersecurity: Vocabulary list, case studies, lesson slides</li>
-          <li>Esports: Code of conduct, sponsorship deck, media kit</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <a class="btn primary" href="mailto:hromney@sd251.org">Email Me</a>
-        <form onsubmit="event.preventDefault(); alert('Thanks! This demo form is not connected yet.');">
-          <div style="display:grid;gap:1rem;grid-template-columns:1fr 1fr">
-            <div>
-              <label for="name">Name</label>
-              <input id="name" placeholder="Your name" />
-            </div>
-            <div>
-              <label for="email">Email</label>
-              <input id="email" type="email" placeholder="you@example.com" />
-            </div>
-          </div>
-          <div style="margin-top:1rem">
-            <label for="msg">Message</label>
-            <textarea id="msg" placeholder="How can I help?"></textarea>
-          </div>
-          <button class="btn primary" style="margin-top:1rem">Send</button>
-        </form>
-      </div>
-    </section>
   </main>
 
   <footer>
     <div class="container">
-      <small>© <span class="tag">Rigby Trojans</span> • Made with vanilla HTML/CSS • Update this footer with your domain & social links.</small>
+      <small>© <span class="tag">Rigby Trojans</span> • Vanilla HTML/CSS • Update this footer with your domain & social links.</small>
     </div>
   </footer>
-
-  <script>
-    function toggleMenu(){
-      const nav = document.getElementById('navLinks');
-      const isOpen = getComputedStyle(nav).display !== 'none';
-      nav.style.display = isOpen ? 'none' : 'flex';
-      nav.style.flexDirection = 'column';
-      nav.style.gap = '0.5rem';
-      nav.style.padding = '0.6rem 0';
-    }
-  </script>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>

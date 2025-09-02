@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rigby Teacher • Resources</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><img src="assets/img/logo.svg" alt="Rigby Trojans logo"> Rigby Teacher</div>
+      <nav class="links" id="navLinks">
+        <a class="" href="index.html">Home</a>
+        <a class="" href="classes.html">Classes</a>
+        <a class="" href="esports.html">Esports</a>
+        <a class="active" href="resources.html">Resources</a>
+        <a class="" href="contact.html">Contact</a>
+      </nav>
+      <button class="menu" aria-label="Toggle Menu" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+  
+  <main>
+    <section class="container">
+      <h2 class="section-title">Resources</h2>
+      <p class="muted">This list auto-loads from <code>resources/resources.json</code>. Add links to PDFs/Docs there.</p>
+      <div id="resourceList" class="list">
+        <p class="muted">Loading resources…</p>
+      </div>
+    </section>
+    <script src="assets/js/resources.js"></script>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>© <span class="tag">Rigby Trojans</span> • Vanilla HTML/CSS • Update this footer with your domain & social links.</small>
+    </div>
+  </footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
